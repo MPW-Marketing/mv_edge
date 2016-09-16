@@ -556,6 +556,9 @@ a:active {
 	text-decoration: none;
     font-family: ProximaNovaExCn;
     font-weight: 400;
+    line-height: 1;
+    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .main-navigation ul ul {
@@ -744,7 +747,7 @@ a:active {
 
 @media screen and (min-width: 37.5em) {
   .nav-collapse a {
-    padding: 1.02em 1.09372rem;
+    padding: 2.813rem 1.09372rem;
     text-align: center;
     border-top: 0;
     float: left;
@@ -1108,10 +1111,15 @@ object {
 .header-widget {
     display: inline-block;
     float: left;
+    margin: 45px 10px 45px;
 }
 .social-icon, .social-icon:visited {
     color: #fffefe;
     font-size: 0;
+    padding: 5px;
+}
+.social-icon:visited {
+    color: #fffefe;
 }
 .social-icon:hover {
     color: #78a22f;
