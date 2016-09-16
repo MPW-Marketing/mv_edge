@@ -50,10 +50,16 @@
 			endif; 
             }?>
 		</div><!-- .site-branding -->
-
+        <div class="nav-container">
 		<nav id="site-navigation" class="main-navigation nav-collapse" role="navigation">
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu', 'container' => '' ) ); ?>
 		</nav><!-- #site-navigation -->
+            <?php if ( is_active_sidebar( 'header_right_widget' ) ) { ?>
+	           <div class="header-right">
+	           	   <?php dynamic_sidebar( 'header_right_widget' ); ?>
+	           </div>
+                     <?php } ?>
+            </div><!--.nav-container->
         </section>
 	</header><!-- #masthead -->
 

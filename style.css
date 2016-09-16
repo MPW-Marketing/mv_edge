@@ -1078,5 +1078,10 @@ object {
 .content-width {
     max-width: 1142px;
     margin: 0 auto;
-    padding: 0 .45em;
+    padding: 0 .40622em;
+}
+.site-branding {
+    float: left;
+    width: 240px;
+    margin-right: 2em;
 }
