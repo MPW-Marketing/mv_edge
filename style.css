@@ -712,7 +712,7 @@ a:active {
 
 @media screen and (min-width: 37.5em) {
   .nav-collapse {
-    float: right;
+    float:left;
     width: auto;
   }
 }
@@ -1100,4 +1100,22 @@ object {
 .site-header {
     height: 118px;
     border-bottom: 6px solid #78a22f;
+}
+.header-right {
+    float: left;
+    margin-right:10px;
+}
+.header-widget {
+    display: inline-block;
+    float: left;
+}
+.social-icon, .social-icon:visited {
+    color: #fffefe;
+    font-size: 0;
+}
+.social-icon:hover {
+    color: #78a22f;
+}
+.social-icon .fa {
+    font-size: 1.458rem;
 }
