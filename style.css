@@ -701,7 +701,7 @@ a:active {
   float: left;
 }
 
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 37.5em) {
   .nav-collapse {
     float: right;
     width: auto;
@@ -713,7 +713,7 @@ a:active {
   width: 100%;
 }
 
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 37.5em) {
   .nav-collapse li {
     width: auto;
   }
@@ -1070,4 +1070,13 @@ object {
 
 .gallery-caption {
 	display: block;
+}
+
+/**
+ * Layouts
+ */
+.content-width {
+    max-width: 1142px;
+    margin: 0 auto;
+    padding: 0 .45em;
 }
