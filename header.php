@@ -59,7 +59,7 @@
 	           	   <?php dynamic_sidebar( 'header_right_widget' ); ?>
 	           </div>
                      <?php } ?>
-            </div><!--.nav-container->
+            </div><!--.nav-container-->
         </section>
 	</header><!-- #masthead -->
 
