@@ -168,7 +168,10 @@ add_action( 'widgets_init', 'mv_edge_widgets_init' );
 function mv_edge_scripts() {
 	wp_enqueue_style( 'mv_edge-style', get_stylesheet_uri() );
 
-	wp_enqueue_script( 'mv_edge-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+    wp_enqueue_script( 'responsive-nav', get_template_directory_uri() . '/js/responsive-nav.js', array(), '20151215', true );
+    wp_enqueue_script( 'fastclick', get_template_directory_uri() . '/js/fastclick.js', array(), '20151215', true );
+    wp_enqueue_script( 'scroll-js', get_template_directory_uri() . '/js/scroll.js', array(), '20151215', true );
+    wp_enqueue_script( 'mv_edge-navigation', get_template_directory_uri() . '/js/fixed-responsive-nav.js', array('responsive-nav', 'fastclick', 'scroll-js'), '20151215', true );
 
 	wp_enqueue_script( 'mv_edge-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
