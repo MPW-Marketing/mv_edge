@@ -52,7 +52,7 @@
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation nav-collapse" role="navigation">
-			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu', 'container' => '' ) ); ?>
 		</nav><!-- #site-navigation -->
         </section>
 	</header><!-- #masthead -->
