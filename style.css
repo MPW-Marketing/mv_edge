@@ -735,7 +735,7 @@ a:active {
 
 @media screen and (min-width: 37.5em) {
   .nav-collapse a {
-    padding: 1.02em 2em;
+    padding: 1.02em 1.09372rem;
     text-align: center;
     border-top: 0;
     float: left;
@@ -1084,4 +1084,7 @@ object {
     float: left;
     width: 240px;
     margin-right: 2em;
+}
+.nav-container {
+    float: right;
 }
