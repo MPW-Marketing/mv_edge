@@ -123,26 +123,7 @@
       }, 500);
     };
 
-    // Select the right navigation item when tapping the logo
-    document.querySelector(".logo").addEventListener("click", function (e) {
-      e.preventDefault();
-      wasNavigationTapped = true;
-
-      // Select first navigation item
-      selectActiveMenuItem(0);
-
-      // Close navigation
-      navigation.close();
-
-      // Remove hash from the URL if pushState is supported
-      if (history.pushState) {
-        history.pushState("", document.title, window.location.pathname);
-      }
-
-      // Clear wasNavigationTapped check
-      clearTapCheck();
-    }, false);
-
+  
     // When a navigation item is tapped, select it and begin scrolling
     forEach(links, function (i, el) {
       links[i].addEventListener("click", function (e) {
@@ -151,7 +132,12 @@
 
         // Select right navigation item (we are passing which one to select "i")
         selectActiveMenuItem(i);
-
+          
+        // determine if navigation is on this page or another page
+          var thisHref = this.getAttribute("href");
+          if (thisHref.indexOf('#') === -1 ) {
+              window.location = thisHref;
+          } else {
         // Show the URL of the section on the address bar
         var thisID = this.getAttribute("href").replace("#", ""),
           pane = document.getElementById(thisID);
@@ -168,7 +154,7 @@
             history.pushState("", document.title, window.location.pathname);
           }
         }
-
+          }
         // Clear wasNavigationTapped check
         clearTapCheck();
       }, false);
