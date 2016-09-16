@@ -554,6 +554,8 @@ a:active {
 .main-navigation a {
 	display: block;
 	text-decoration: none;
+    font-family: ProximaNovaExCn;
+    font-weight: 400;
 }
 
 .main-navigation ul ul {
@@ -580,14 +582,18 @@ a:active {
 
 .main-navigation li:hover > a,
 .main-navigation li.focus > a {
+    color: #78a22f;
 }
 
 .main-navigation ul ul :hover > a,
 .main-navigation ul ul .focus > a {
+    color: #78a22f;
 }
 
 .main-navigation ul ul a:hover,
 .main-navigation ul ul a.focus {
+    color: #78a22f;
+    
 }
 
 .main-navigation ul li:hover > ul,
@@ -604,6 +610,7 @@ a:active {
 .main-navigation .current-menu-item > a,
 .main-navigation .current_page_ancestor > a,
 .main-navigation .current-menu-ancestor > a {
+    color: #78a22f;
 }
 
 /* Small menu. */
@@ -723,14 +730,14 @@ a:active {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
   text-decoration: none;
   padding: 0.7em 1em;
-  color: #fff;
+  color: #fffefe;
   width: 100%;
   float: left;
 }
 
 .nav-collapse a:active,
 .nav-collapse .active a {
-  
+  color: #78a22f;
 }
 
 @media screen and (min-width: 37.5em) {
@@ -1076,15 +1083,19 @@ object {
  * Layouts
  */
 .content-width {
-    max-width: 1142px;
+    max-width: 1285px;
     margin: 0 auto;
     padding: 0 .40622em;
 }
 .site-branding {
     float: left;
     width: 240px;
-    margin-right: 2em;
+    margin: 28px 16px 23px 10px; 
 }
 .nav-container {
     float: right;
+}
+.site-header {
+    height: 118px;
+    border-bottom: 6px solid #78a22f;
 }
