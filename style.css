@@ -1135,4 +1135,15 @@ object {
 .footer-center {
     margin: 0 auto;
     text-align: center;
+    color: #ffffff;
+    font-family: ProximaNovaExCn;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    height: 100%;
+    justify-content: center;
+}
+
+.site-info.content-width {
+    height: 100%;
 }
