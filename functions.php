@@ -64,6 +64,14 @@ function mv_edge_setup() {
 		'default-color' => 'ffffff',
 		'default-image' => '',
 	) ) );
+    
+     // Enable support for Custom Logo   
+    add_theme_support( 'custom-logo', array(
+	   'height'      => 67,
+	   'width'       => 240,
+	   'flex-height' => true,
+	   'flex-width'  => true,
+    ) );
 }
 endif;
 add_action( 'after_setup_theme', 'mv_edge_setup' );
