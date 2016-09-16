@@ -610,7 +610,9 @@ a:active {
 .main-navigation .current-menu-item > a,
 .main-navigation .current_page_ancestor > a,
 .main-navigation .current-menu-ancestor > a {
+    /* need to fix for #anchor links
     color: #78a22f;
+    */
 }
 
 /* Small menu. */
