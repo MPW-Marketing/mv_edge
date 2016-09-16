@@ -205,3 +205,14 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+/**
+ * Load Theme Logo
+ */
+function mv_edge_the_custom_logo() {
+    
+    if ( function_exists( 'the_custom_logo' ) ) {
+        the_custom_logo();
+    }
+
+}
