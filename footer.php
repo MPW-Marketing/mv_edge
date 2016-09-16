@@ -14,10 +14,12 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'mv_edge' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'mv_edge' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'mv_edge' ), 'mv_edge', '<a href="http://mpwmarketing.com" rel="designer">MPW</a>' ); ?>
+		<div class="site-info content-width">
+			<?php if ( is_active_sidebar( 'footer_copyright_center' ) ) { ?>
+	           <div class="footer-center">
+	           	   <?php dynamic_sidebar( 'footer_copyright_center' ); ?>
+	           </div>
+                     <?php } ?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

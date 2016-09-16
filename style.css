@@ -559,6 +559,7 @@ a:active {
     line-height: 1;
     font-size: 20px;
     font-size: 1.25rem;
+    text-transform: uppercase;
 }
 
 .main-navigation ul ul {
@@ -1126,4 +1127,12 @@ object {
 }
 .social-icon .fa {
     font-size: 1.458rem;
+}
+.site-footer {
+    background-color: #152029;
+    height: 134px;
+}
+.footer-center {
+    margin: 0 auto;
+    text-align: center;
 }
