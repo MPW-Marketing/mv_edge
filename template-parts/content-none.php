@@ -10,7 +10,7 @@
 ?>
 
 <section class="no-results not-found">
-	<header class="page-header">
+	<header class="page-header content-width">
 		<h1 class="page-title"><?php esc_html_e( 'Nothing Found', 'mv_edge' ); ?></h1>
 	</header><!-- .page-header -->
 

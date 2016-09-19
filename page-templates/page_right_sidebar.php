@@ -1,11 +1,8 @@
-<?php
+<?php /* Template Name: Sidebar Right Page */
 /**
  * The template for displaying all pages.
  *
- * This is the template that displays all pages by default.
- * Please note that this is the WordPress construct of pages
- * and that other 'pages' on your WordPress site may use a
- * different template.
+ * This is the template that displays sidebar right pages by default.
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
@@ -14,7 +11,7 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
+	<div id="primary" class="content-area has-sidebar">
 		<main id="main" class="site-main" role="main">
 
 			<?php
@@ -34,4 +31,5 @@ get_header(); ?>
 	</div><!-- #primary -->
 
 <?php
+get_sidebar();
 get_footer();

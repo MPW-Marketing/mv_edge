@@ -1099,6 +1099,19 @@ object {
     margin: 0 auto;
     padding: 0 .40622em;
 }
+.has-sidebar.content-area {
+	float: left;
+	margin: 0 -25% 0 0;
+	width: 100%;
+}
+.has-sidebar .site-main {
+	margin: 0 25% 0 0;
+}
+.site-content .widget-area {
+	float: right;
+	overflow: hidden;
+	width: 25%;
+}
 .site-branding {
     float: left;
     width: 240px;
