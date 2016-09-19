@@ -266,7 +266,7 @@ input,
 select,
 textarea {
 	color: #404040;
-	font-family: sans-serif;
+	font-family: proxima-nova-extra-condensed; "Trebuchet MS", sans-serif;
 	font-size: 16px;
 	font-size: 1rem;
 	line-height: 1.5;
@@ -557,12 +557,19 @@ a:active {
     font-family: proxima-nova-extra-condensed;
     font-weight: 400;
     line-height: 1;
-    font-size: 20px;
-    font-size: 1.25rem;
+    font-size: 14.4px;
+    font-size: .9rem;
     text-transform: uppercase;
+}
+.wf-active .main-navigation a {
+        font-size: 20px;
+    font-size: 1.25rem;
 }
 .main-navigation a:active, .main-navigation a:hover {
     background: url(images/Current-Page-Arrow.png);
+    background: url(images/Current-Page-Arrow.png);
+    background-repeat: no-repeat;
+    background-position: bottom center;
 }
 
 .main-navigation ul ul {
@@ -751,7 +758,7 @@ a:active {
 
 @media screen and (min-width: 37.5em) {
   .nav-collapse a {
-    padding: 2.813rem 1.09372rem;
+    padding: 3rem 1.09372rem 3.2rem;
     text-align: center;
     border-top: 0;
     float: left;
@@ -1105,7 +1112,7 @@ object {
     float: right;
 }
 .site-header {
-    height: 118px;
+    height: 124px;
     border-bottom: 6px solid #78a22f;
     background-color: #012437;
 }
