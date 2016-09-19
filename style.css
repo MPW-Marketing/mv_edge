@@ -757,7 +757,7 @@ a:active {
 
 @media screen and (min-width: 37.5em) {
   .nav-collapse a {
-    padding: 51px 8px 54px;
+    padding: 51px 10px 54px;
     text-align: center;
     border-top: 0;
     float: left;
