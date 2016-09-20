@@ -61,16 +61,16 @@ function layout_column ( $atts, $content=null ) {
 		), $atts, 'full_width' );
     $cont = '<div class="pure-u-' . $atts['columns'];
     if ($atts['sm'] != '') {
-        $cont .= ' pure-u-sm' .$atts['sm'];
+        $cont .= ' pure-u-sm-' .$atts['sm'];
     }
     if ($atts['md'] != '') {
-        $cont .= ' pure-u-md' .$atts['md'];
+        $cont .= ' pure-u-md-' .$atts['md'];
     }
     if ($atts['lg'] != '') {
-        $cont .= ' pure-u-lg' .$atts['lg'];
+        $cont .= ' pure-u-lg-' .$atts['lg'];
     }
     if ($atts['xl'] != '') {
-        $cont .= ' pure-u-xl' .$atts['xl'];
+        $cont .= ' pure-u-xl-' .$atts['xl'];
     }
     if ($atts['class'] != '') {
         $cont .= ' ' .$atts['class'];
