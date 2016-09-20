@@ -1194,3 +1194,34 @@ object {
 .dark-blue-secion {
     background-color: #152029;
 }
+.map-section {
+    background: url(images/Map.png);
+}
+.main-hexagon {
+    background: url(images/White.png);
+}
+.purple-hexagon {
+    background: url(images/Purple.png);
+}
+.red-hexagon {
+    background: url(images/Red.png);
+}
+.yellow-hexagon {
+    background: url(images/Yellow.png);
+}
+.blue-hexagon {
+    background: url(images/Blue.png);
+}
+.green-hexagon {
+    background: url(images/Green.png);
+}
+.button {
+    border-color: #78a22f;
+    border-radius: 25px;
+    border-style: solid;
+    border-width: 5px;
+    padding: 18px 35px;
+}
+.button:hover {
+    background-color: #78a22f;
+} 
