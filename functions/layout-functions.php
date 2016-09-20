@@ -33,6 +33,7 @@ function layout_row ( $atts, $content=null ) {
     $atts = shortcode_atts(
         array(
             'class' => '',
+            'id' =? '',
 		), $atts, 'row' );
     
     
@@ -40,7 +41,11 @@ function layout_row ( $atts, $content=null ) {
     if ($atts['class'] != '') {
         $cont .= ' ' .$atts['class'];
     }
-    $cont .= '">'.$content. '</div>';
+    $cont .= '"';
+    if ($atts['id'] != '') {
+        $cont .= ' id="' . $atts['id'] . '" ';
+    }
+    $cont .= '>'.$content. '</div>';
     return do_shortcode($cont);
 }
 
@@ -48,9 +53,25 @@ function layout_column ( $atts, $content=null ) {
         $atts = shortcode_atts(
 		array(
             'class' => '',
-            'columns' => "1-1"
+            'columns' => "1-1",
+            'sm' => '',
+            'md' => '',
+            'lg' => '',
+            'xl' => '',
 		), $atts, 'full_width' );
     $cont = '<div class="pure-u-' . $atts['columns'];
+    if ($atts['sm'] != '') {
+        $cont .= ' pure-u-sm' .$atts['sm'];
+    }
+    if ($atts['md'] != '') {
+        $cont .= ' pure-u-md' .$atts['md'];
+    }
+    if ($atts['lg'] != '') {
+        $cont .= ' pure-u-lg' .$atts['lg'];
+    }
+    if ($atts['xl'] != '') {
+        $cont .= ' pure-u-xl' .$atts['xl'];
+    }
     if ($atts['class'] != '') {
         $cont .= ' ' .$atts['class'];
         }
