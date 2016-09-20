@@ -176,6 +176,7 @@ add_action( 'widgets_init', 'mv_edge_widgets_init' );
 function mv_edge_scripts() {
 	wp_enqueue_style( 'mv_edge-style', get_stylesheet_uri() );
     wp_enqueue_style( 'font-awesome', get_template_directory_uri() . '/css/font-awesome.css' );
+    wp_enqueue_style( 'pure-grids', get_template_directory_uri() . '/css/pure-grids.css' );
     
    // wp_enqueue_script( 'typekit-loader', 'https://use.typekit.net/ltp3bfu.js', array(), '20151215', false );
 //     wp_enqueue_script( 'mv_edge_header', get_template_directory_uri() . '/js/mv-edge-header.js', array('typekit-loader'), '20151215', false );
@@ -221,6 +222,10 @@ require get_template_directory() . '/inc/customizer.php';
  */
 require get_template_directory() . '/inc/jetpack.php';
 
+/**
+ * Load the custom layouts shortcode file
+ */
+require get_template_directory() . '/function/layout-functions.php';
 /**
  * Load Theme Logo
  */
