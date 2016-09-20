@@ -10,10 +10,12 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+    <?php  hide_title = get_field($hide_heading);
+    if ( $hide_title !== 'yes'){ ?>
 	<header class="entry-header content-width">
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
-
+<?php } ?>
 	<div class="entry-content">
 		<?php
 			the_content();

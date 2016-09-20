@@ -285,6 +285,7 @@ h4,
 h5,
 h6 {
 	clear: both;
+	text-transform: uppercase;
 }
 
 p {
@@ -1249,7 +1250,7 @@ object {
     background-color: #78a22f;
 }
 .home-heading-left {
-    margin: 1.42928em 0;
+    margin: 1.11905em 0;
 }
 .home-heading-right {
     text-align: center;
