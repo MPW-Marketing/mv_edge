@@ -1248,4 +1248,14 @@ object {
 .button:hover {
     background-color: #78a22f;
 }
+.home-heading-left {
+    margin: 1.42928em 0;
+}
+.home-heading-right {
+    text-align: center;
+}
+.text-content {
+    line-height: 1.2em;
+    margin-top: .6em;
+}
 
