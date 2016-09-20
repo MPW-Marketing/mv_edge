@@ -36,7 +36,7 @@ function layout_row ( $atts, $content=null ) {
 		), $atts, 'row' );
     
     
-    $cont = '<div class="pure-g';
+    $cont = '<div class="pure-g content-width';
     if ($atts['class'] != '') {
         $cont .= ' ' .$atts['class'];
     }
