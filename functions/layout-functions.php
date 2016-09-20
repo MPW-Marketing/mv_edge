@@ -33,7 +33,7 @@ function layout_row ( $atts, $content=null ) {
     $atts = shortcode_atts(
         array(
             'class' => '',
-            'id' =? '',
+            'id' => '',
 		), $atts, 'row' );
     
     

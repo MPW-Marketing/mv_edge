@@ -1182,7 +1182,7 @@ object {
 }
 .curly-brace {
     font-size: 145px;
-    background: url(images/Bracket.png);
+    /*background: url(images/Bracket.png);*/
 }
 .home-heading-left {
     font-size: 42px;
@@ -1214,21 +1214,27 @@ object {
     background: url(images/Map.png);
 }
 .main-hexagon {
+        background: url(images/EDGE-Logo-copy.png);
     background: url(images/White.png);
 }
 .purple-hexagon {
+    background: url(images/R.png);
     background: url(images/Purple.png);
 }
 .red-hexagon {
+    background: url(images/GLDC.png);
     background: url(images/Red.png);
 }
 .yellow-hexagon {
+    background: url(images/Layer-1.png);
     background: url(images/Yellow.png);
 }
 .blue-hexagon {
+    background: url(images/OCIDA.png);
     background: url(images/Blue.png);
 }
 .green-hexagon {
+    background: url(images/Griffiss.png);
     background: url(images/Green.png);
 }
 .button {
