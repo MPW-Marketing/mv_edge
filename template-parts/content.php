@@ -13,7 +13,7 @@
 	<header class="entry-header content-width">
 		<?php
         $hide_title = get_field($hide_heading);
-         if ( $hide_title !== 'yes'){
+         if ( $hide_title !== 'Yes'){
 		  if ( is_single() ) :
 		  	the_title( '<h1 class="entry-title">', '</h1>' );
 		  else :
