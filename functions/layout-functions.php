@@ -23,7 +23,7 @@ function full_width_section ( $atts, $content=null ) {
     if ($atts['style'] != '') {
         $cont .= ' style="' . $atts['style'] . '"';
     }
-    $cont .= '<div class="content-width">' . $content . '</div>';
+    $cont .= '><div class="content-width">' . $content . '</div>';
     $cont .= '</section>';
     
     return do_shortcode($cont);
@@ -36,7 +36,7 @@ function layout_row ( $atts, $content=null ) {
 		), $atts, 'row' );
     
     
-    $cont = '<div class="pure-g content-width';
+    $cont = '<div class="pure-g';
     if ($atts['class'] != '') {
         $cont .= ' ' .$atts['class'];
     }
