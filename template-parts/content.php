@@ -12,7 +12,7 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header content-width">
 		<?php
-        hide_title = get_field($hide_heading);
+        $hide_title = get_field($hide_heading);
          if ( $hide_title !== 'yes'){
 		  if ( is_single() ) :
 		  	the_title( '<h1 class="entry-title">', '</h1>' );
