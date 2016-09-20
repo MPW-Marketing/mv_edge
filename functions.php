@@ -225,7 +225,7 @@ require get_template_directory() . '/inc/jetpack.php';
 /**
  * Load the custom layouts shortcode file
  */
-require get_template_directory() . '/function/layout-functions.php';
+require get_template_directory() . '/functions/layout-functions.php';
 /**
  * Load Theme Logo
  */

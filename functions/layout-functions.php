@@ -21,7 +21,7 @@ function full_width_section ( $atts, $content=null ) {
     }
     $cont .= '"';
     if ($atts['style'] != '') {
-        $cont .= ' style=" . '$atts['style'] . '"';
+        $cont .= ' style="' . $atts['style'] . '"';
     }
     $cont .= '<div class="content-width">' . $content . '</div>';
     $cont .= '</section>';
