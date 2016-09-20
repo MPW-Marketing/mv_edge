@@ -1205,16 +1205,24 @@ object {
 .white-section {
     background-color: #fff;
     color: #042e50;
+    margin-top: -1.5em;
 }
 .light-blue-section {
     background-color: #005295;
+    margin-top: -2.25em;
+}
+.medium-blue-section {
+    background-color: #042e50;
 }
 .dark-blue-secion {
     background-color: #152029;
 }
-.map-section {
-    background: url(images/Map.png);
+.about-heading {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 2.75em;
 }
+
 .main-hexagon {
         background: url(images/EDGE-Logo-copy.png);
     background: url(images/White.png);
