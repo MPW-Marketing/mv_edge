@@ -1183,6 +1183,10 @@ object {
 .curly-brace {
     font-size: 145px;
     /*background: url(images/Bracket.png);*/
+    float: left;
+}
+.text-content {
+    float: left;
 }
 .home-heading-left {
     font-size: 42px;
