@@ -7,6 +7,7 @@ function full_width_section ( $atts, $content=null ) {
 			'style' => '',
 			'id' => '',
             'class' => '',
+            'add_ons' => '',
 		), $atts, 'full_width' );
 
     $cont = '<section id="';
@@ -23,6 +24,9 @@ function full_width_section ( $atts, $content=null ) {
     if ($atts['style'] != '') {
         $cont .= ' style="' . $atts['style'] . '"';
     }
+    if ($atts['add_ons'] != '') {
+        $cont .= ' ' . $atts['add_ons'];
+    }
     $cont .= '><div class="content-width">' . $content . '</div>';
     $cont .= '</section>';
     
@@ -32,8 +36,10 @@ function full_width_section ( $atts, $content=null ) {
 function layout_row ( $atts, $content=null ) {
     $atts = shortcode_atts(
         array(
+			'style' => '',
+			'id' => '',
             'class' => '',
-            'id' => '',
+            'add_ons' => '',
 		), $atts, 'row' );
     
     
@@ -45,6 +51,12 @@ function layout_row ( $atts, $content=null ) {
     if ($atts['id'] != '') {
         $cont .= ' id="' . $atts['id'] . '" ';
     }
+    if ($atts['style'] != '') {
+        $cont .= ' style="' . $atts['style'] . '"';
+    }
+    if ($atts['add_ons'] != '') {
+        $cont .= ' ' . $atts['add_ons'];
+    }
     $cont .= '>'.$content. '</div>';
     return do_shortcode($cont);
 }
@@ -52,7 +64,10 @@ function layout_row ( $atts, $content=null ) {
 function layout_column ( $atts, $content=null ) {
         $atts = shortcode_atts(
 		array(
+			'style' => '',
+			'id' => '',
             'class' => '',
+            'add_ons' => '',
             'columns' => "1-1",
             'sm' => '',
             'md' => '',
@@ -75,7 +90,14 @@ function layout_column ( $atts, $content=null ) {
     if ($atts['class'] != '') {
         $cont .= ' ' .$atts['class'];
         }
-    $cont .= '">'.$content. '</div>';
+    $cont .= '"';
+        if ($atts['style'] != '') {
+        $cont .= ' style="' . $atts['style'] . '"';
+    }
+    if ($atts['add_ons'] != '') {
+        $cont .= ' ' . $atts['add_ons'];
+    }
+    $cont .='>'.$content. '</div>';
     return do_shortcode($cont);
 }
 
