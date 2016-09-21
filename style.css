@@ -1256,7 +1256,6 @@ object {
     margin: 0 auto;
     font-size: 1.5rem;
     font-weight: 400;
-    padding: 0;
 }
 #services {
     max-width: 900px;
@@ -1357,6 +1356,77 @@ object {
 .green-hexagon {
     background: url(images/Griffiss.png);
     background: url(images/Green.png);
+}
+
+.economic-op-stat-box {
+    border-radius: 15px;
+    border-width: 10px;
+    border-style: solid;
+}
+.economic-op-stat-box {
+    border-radius: 15px;
+    border-width: 10px;
+    border-style: solid;
+    margin: 1rem;
+    text-align: center;
+    padding: 1.75rem .5rem;
+}
+.economic-op-stat-box .stat-number {
+    font-size: 100px;
+    font-size: 6.244rem;
+}
+.economic-op-stat-box .stat-info p {
+	color: #fff;
+}
+.exports {
+    border-color: #eda918;
+    color: #eda918;
+}
+.exports .stat-number {
+    color: #eda918;
+}
+.college {
+    border-color: #df4142;
+    color: #df4142;
+}
+.college .stat-number {
+    color: #df4142;
+}
+.refugees {
+    border-color: #895ea8;
+    color: #895ea8;
+}
+.refugees .stat-number {
+	color: #895ea8;
+}
+.stem {
+    border-color: #50d893;
+    color: #50d893;
+}
+.stem .stat-number {
+	color: #50d893;
+}
+.eco-indicators-box {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.economic-indicators {
+	font-size: 30px;
+    font-size: 1.874rem;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.economic-indicators th {
+
+}
+.economic-indicators td {
+    text-align: center;
+}
+.economic-indicators td.row-title {
+    text-align: left;
+}
+.economic-indicators tr {
+    height: 76px;
 }
 
 .home-heading-left {
