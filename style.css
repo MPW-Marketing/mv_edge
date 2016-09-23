@@ -1209,6 +1209,7 @@ object {
 	max-width: 900px;
     margin-left: auto;
     margin-right: auto;
+    line-height: 1;
 }
 .home-section p {
     font-size: 1.5rem;
@@ -1332,8 +1333,11 @@ object {
     display: inline-block;
     background: url(images/Arrow.png);
     background-repeat: no-repeat;
-    background-repeat: no-repeat;
     background-position: 90%;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-size: 1.5rem;
+    line-height: 1;
 }
 .button:hover {
     background-color: #78a22f;
@@ -1575,5 +1579,145 @@ object {
 .business-assistance-buttons .button:nth-of-type(3) {
     margin-left: 0;
 }
+#industry h2 {
+    font-weight: 400;
+}
+#industry h2 {
+    font-weight: 400;
+}
+.industries .industry-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 1rem;   
+}
+@media screen and (min-width: 35.5em) {
+.industries .industry-image {
+    display: flex;
+}
+}
+.industry-image-inner {
+    position: relative;
+}
+.industry-image:nth-of-type(odd) {
+   border-right: 1rem solid #152029;
+}
+.industry-image:nth-of-type(even) {
+    border-left: 1rem solid #152029;
+}
+.industry-image .industry-image-inner:after {
+    position: absolute;
+    content: " ";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.industry-image img {
+    object-fit: cover;
+    display: block;
+}
+/* uncomment this block to have images fill space and crop instead of shrink*/
+/*
+.industry-image-inner {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.industry-image img {
+    object-fit: cover;
+    display: block;
+    height: 100%;
+}
+*/
+.advanced-mfg .industry-image-inner:after {
+    background-color: rgba(40,165,222,.4);
+}
+.agribusiness .industry-image-inner:after {
+    background-color: rgba(237, 169, 24,.4);
+}
+.aviation .industry-image-inner:after {
+    background-color: rgba(223, 65, 66,.4);
+}
+.cyber .industry-image-inner:after {
+    background-color: rgba(137, 94, 168,.4);
+}
+.finance .industry-image-inner:after {
+    background-color: rgba(80, 216, 147,.4);
+}
+.nanotech .industry-image-inner:after {
+    background-color: rgba(234, 125, 60,.4);
+}
+
+
+
+.industry-info {
+    margin-bottom: 1rem;
+    padding-left: .5rem;
+    padding-right: 5rem;
+}
+
+.industry-info h3 {
+    text-align: left;
+    line-height: .9;
+    font-size: 57px;
+    font-size: 3.5625rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+.industry-button {
+    margin-top: 3rem;
+}
+.industries .button {
+    background-color: #152029;
+}
+.industries .button:hover {
+    background-color: #78a22f;
+}
+.advanced-mfg {
+    background-color: #28a5de;
+}
+.agribusiness {
+	background-color:  #eda918;
+}
+.aviation {
+    background-color:  #df4142;
+}
+.cyber {
+    background-color:  #895ea8;
+}
+.finance {
+    background-color:  #50d893;
+}
+.nanotech {
+    background-color:  #ea7d3c;
+}
+.contact-info {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+.contact-icon {
+    border-radius: 50%;
+    border-width: 5px;
+    border-color: #ffffff;
+    border-style: solid;
+    width: 99px;
+    height: 99px;
+    margin: 0 auto;
+    font-size: 37px;
+    display: flex;
+    font-size: 2.5rem;
+    flex-direction: column;
+    justify-content: center;
+}
+.contact-icon .fa-phone {
+    font-size: 49px;
+}
+.contact-icon .fa-share-alt {
+    font-size: 53px;
+    font-weight: 100;
+}
+
 
 
