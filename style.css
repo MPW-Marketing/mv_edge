@@ -1188,23 +1188,23 @@ object {
     float: left;
 }
 
-.home-heading-left {
+.home-heading-right {
     font-size: 42px;
     font-weight: 400;
 }
-.home-heading-left .emboldened {
+.home-heading-right .emboldened {
     font-weight: 700;
 }
 .home-section h2 {
     font-size: 45px;
     font-size: 2.8125rem;
     text-align: center;
-    font-weight: 400;
+    font-weight: 700;
 }
 .home-section h3 {
 	font-size: 32px;
 	font-size: 2rem;
-	font-weight: 400;
+	font-weight: 700;
 	text-align: center;
 	max-width: 900px;
     margin-left: auto;
@@ -1220,6 +1220,16 @@ object {
 .home-section {
     padding-top: 4rem;
     padding-bottom: 4rem;
+}
+.home-heading-right {
+    margin: 1.11905em 0;
+}
+.home-heading-left {
+    text-align: center;
+}
+.text-content {
+    line-height: 1.2em;
+    margin-top: .6em;
 }
 .pure-u-sm-1-2 {
     padding-left: .5em;
@@ -1410,6 +1420,10 @@ object {
     max-width: 1100px;
     margin: 0 auto;
 }
+.sub-head-text {
+    font-size: 1.8rem;
+    font-weight: 400;
+}
 .economic-indicators {
 	font-size: 30px;
     font-size: 1.874rem;
@@ -1425,18 +1439,141 @@ object {
 .economic-indicators td.row-title {
     text-align: left;
 }
-.economic-indicators tr {
-    height: 76px;
+.economic-indicators td {
+    font-size: 24px;
+    font-size: 1.5rem;
 }
-
-.home-heading-left {
-    margin: 1.11905em 0;
-}
-.home-heading-right {
+.cell-container {
+    width: 137px;
+    border: 5px solid;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    background-color: #1b1b1b;
+    color: #fff;
     text-align: center;
 }
-.text-content {
-    line-height: 1.2em;
-    margin-top: .6em;
+.row-title .cell-container {
+	border: none;
+	background-color: transparent;
+	width: auto;
+	text-align: left;
 }
+.employment {
+    color: #df4142;
+}
+.wages {
+	color:  #50d893;
+}
+.establishments {
+	color:  #eda918;
+}
+
+.stem-employment {
+	color:  #895ea8;
+}
+.exports-table {
+	color:  #28a5de;
+}
+.employment .cell-container {
+    border-color: #df4142;
+}
+.wages .cell-container {
+	border-color:  #50d893;
+}
+.establishments .cell-container {
+	border-color:  #eda918;
+}
+.stem-employment .cell-container {
+	border-color:  #895ea8;
+}
+.exports-table .cell-container {
+	border-color:  #28a5de;
+}
+.sub-text-container {
+    text-align: right;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.sub-text {
+    text-align: right;
+    font-size: 1rem;
+}
+.mv-stats-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    margin-top: 4rem;
+}
+.stat-name {
+	font-size: 32px;
+    font-size: 2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.stat-value {
+	font-size: 36px;
+    font-size: 2.25rem;
+    text-align: right;
+    font-weight: 700;
+}
+#business-assistance h2 {
+    font-weight: 400;
+}
+.business-assistance-container {
+    text-align: center;
+}
+.business-stat-number {
+    color: #042e50;
+    font-size: 102px;
+    font-size: 6.4rem;
+    font-weight: 700;
+    padding: 2rem 1rem;
+    background: #fff;
+    margin: 0 .25rem;
+    border-radius: 15px;
+    line-height: 1;
+}
+.site-visit-stats .business-stat-number {
+	background-color:  #895ea8;
+}
+.business-leads-stats .business-stat-number {
+	background-color: #df4142;
+}
+.business-outreach-stats .business-stat-number {
+	background-color:  #28a5de;
+}
+.trade-shows-stats .business-stat-number {
+	background-color:  #eda918;
+}
+.presentations-stats .business-stat-number {
+	background-color:  #50d893;
+}
+.business-stat-info {
+    margin-top: 2rem;
+    color: #fefefe;
+    font-size: 1.85rem;
+    line-height: 1;
+    text-transform: uppercase;
+}
+.business-assistance-buttons {
+    max-width: 750px;
+    margin: 0 auto;
+    text-align: center;
+}
+.business-assistance-buttons .button {
+    margin: .95rem .8rem;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-size: 1.5rem;
+    line-height: 1;
+}
+.business-assistance-buttons .button:nth-of-type(1) {
+    margin-left: 0;
+}
+.business-assistance-buttons .button:nth-of-type(3) {
+    margin-left: 0;
+}
+
 
