@@ -1129,6 +1129,11 @@ object {
     height: 124px;
     border-bottom: 6px solid #78a22f;
     background-color: #012437;
+    position: fixed;
+    width: 100%;
+}
+#primary {
+    padding-top: 4rem;
 }
 .header-right {
     float: left;
@@ -1718,6 +1723,15 @@ object {
     font-size: 53px;
     font-weight: 100;
 }
-
+.contact-data {
+    font-size: 25px;
+    font-size: 1.55rem;
+    margin-top: 3rem;
+    height: 58px;
+    line-height: 58px;
+}
+.contact-data a {
+    color: #78a22f;
+}
 
 
