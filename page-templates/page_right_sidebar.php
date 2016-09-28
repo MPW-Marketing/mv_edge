@@ -11,7 +11,14 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area has-sidebar">
+	<div id="primary" class="content-area has-sidebar">    
+	<?php  $hide_title = get_field( 'hide_heading' );
+    if ( $hide_title !== 'Yes'){ ?>
+	<header class="entry-header content-width">
+		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+	</header><!-- .entry-header -->
+<?php } ?>
+	<div class="content-container content-width">
 		<main id="main" class="site-main" role="main">
 
 			<?php
@@ -28,8 +35,11 @@ get_header(); ?>
 			?>
 
 		</main><!-- #main -->
+		<?php
+get_sidebar();
+?>
+</div><!-- .content-contanier -->
 	</div><!-- #primary -->
 
 <?php
-get_sidebar();
 get_footer();

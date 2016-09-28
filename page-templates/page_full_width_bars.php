@@ -11,6 +11,12 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
+		<?php  $hide_title = get_field( 'hide_heading' );
+    if ( $hide_title !== 'Yes'){ ?>
+	<header class="entry-header content-width">
+		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+	</header><!-- .entry-header -->
+<?php } ?>
 		<main id="main" class="site-main" role="main">
 
 			<?php
