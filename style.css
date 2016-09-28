@@ -1131,6 +1131,7 @@ object {
     background-color: #012437;
     position: fixed;
     width: 100%;
+    z-index: 999;
 }
 #primary {
     padding-top: 4rem;
@@ -1416,7 +1417,9 @@ object {
     color: #895ea8;
 }
 .refugees .stat-number {
-	color: #895ea8;
+    color: #895ea8;
+    font-size: 92px;
+    font-size: 5.7rem;
 }
 .stem {
     border-color: #50d893;
@@ -1428,6 +1431,7 @@ object {
 .eco-indicators-box {
     max-width: 1100px;
     margin: 0 auto;
+    position: relative;
 }
 .sub-head-text {
     font-size: 1.8rem;
@@ -1515,17 +1519,61 @@ object {
     margin: 0 auto;
     margin-top: 4rem;
 }
+.mv-general-stats-div, .wages-table {
+    display: table;
+    width: 100%;
+}
+.stat-row {
+    clear: both;
+    width: 100%;
+    display: table-row;
+    background: url(/wp-content/uploads/2016/09/single-dot.png) no-repeat;
+    background-repeat: repeat-x;
+    background-position: 0 29px;
+}
+.mv-general-stats-div .stat-value{
+    padding-left: 74%;
+}
+.mv-general-stats-div .cell-info {
+    opacity: 0;
+}
+.wages-table  .cell-info {
+    opacity: 0;
+}
+.wages-table .stat-value{
+    padding-left: 50%;
+}
+/* 
+.mv-general-stats-div .stat-row {
+    opacity: 0;
+}*/
+.mv-general-stats-div .stat-name, .wages-table .stat-name {
+        padding-right: 10px;
+}
+.stat-cell {
+ display: table-cell;
+ background: #152029;
+}
 .stat-name {
 	font-size: 32px;
     font-size: 2rem;
     font-weight: 400;
     text-transform: uppercase;
+    float: left;
 }
 .stat-value {
 	font-size: 36px;
     font-size: 2.25rem;
     text-align: right;
     font-weight: 700;
+    float: right;
+}
+#stat-cyber,
+#stat-nano,
+#stat-mfg,
+#stat-aviation,
+#stat-food {
+
 }
 #business-assistance h2 {
     font-weight: 400;
@@ -1732,6 +1780,111 @@ object {
 }
 .contact-data a {
     color: #78a22f;
+}
+
+.industry-right {
+    position: relative;
+    right: -999em;
+}
+/*.industry-right.in-view {
+    right: 0;
+}*/
+.industry-left {
+    position: relative;
+    left: -999em;
+}
+/*.industry-left.in-view {
+    left: 0;
+}*/
+#about-stats-section {
+    padding: 0;
+    height:0;
+    overflow: hidden;
+    }
+
+#economic-ops {
+    padding: 0;
+    height:0;
+    overflow: hidden;
+}
+.economic-indicators .cell-container {
+    opacity: 0;
+}
+.hexagon-boxes {
+    position: relative;
+    height: 1000px;
+}
+.hexagon-box {
+    position: absolute;
+    opacity: 0;
+    height: 351px;
+    width: 351px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#center-hex {
+    background-image: url('/wp-content/uploads/2016/09/White.png'); 
+    left: 40%;
+    top: 40%;
+}
+#top-center-hex {
+    background-image: url('/wp-content/uploads/2016/09/Red.png');
+    left: 40%;
+    top: 0;
+}
+#top-right-hex {
+    background-image: url('/wp-content/uploads/2016/09/Yellow.png');
+    right: 0;
+    top: 20%;
+}
+#bottom-right-hex {
+    background-image: url('/wp-content/uploads/2016/09/Blue.png');
+    right: 10%;
+    bottom: 0;
+}
+#bottom-left-hex {
+    background-image: url('/wp-content/uploads/2016/09/Green.png');
+    bottom: 0;
+    left: 10%;
+}
+#top-left-hex {
+    background-image: url('/wp-content/uploads/2016/09/Purple.png');
+    left: 0;
+    top: 20%;
+}
+#center-hex .hex-inner {
+    margin-top: -25px;
+}
+
+#hexagon-canvas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+#hexagon-canvas line {
+    stroke: #fff;
+    stroke-linecap: round;
+    stroke-dasharray: 1, 15;
+    stroke-width: 10; 
+    opacity: 0;
+}
+#eco-indicators-canvas, #mv-stats-canvas, #mv-wages-canvas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+#eco-indicators-canvas line {
+    stroke: #fff;
+    stroke-linecap: round;
+    stroke-dasharray: 1, 15;
+    stroke-width: 10; 
+    opacity: 1;
 }
 
 

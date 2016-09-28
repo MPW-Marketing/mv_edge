@@ -178,6 +178,7 @@ function mv_edge_scripts() {
     wp_enqueue_style( 'font-awesome', get_template_directory_uri() . '/css/font-awesome.css' );
     wp_enqueue_style( 'pure-grids', get_template_directory_uri() . '/css/pure-grids.css' );
     wp_enqueue_style( 'animate', get_template_directory_uri() . '/css/animate.css' );
+    wp_enqueue_style( 'odometer-theme-min', get_template_directory_uri() . '/css/odometer-theme-minimal.css' );
 
     
     
@@ -185,11 +186,16 @@ function mv_edge_scripts() {
      wp_enqueue_script( 'mv_edge_header', get_template_directory_uri() . '/js/mv-edge-header.js', array('jquery'), '20151216', false );
     
     
-    wp_enqueue_script( 'mv_edge-scripts', get_template_directory_uri() . '/js/mv-edge.js', array('jquery', 'responsive-nav', 'wow' ), '20151215', true );
-    wp_enqueue_script( 'wow', get_template_directory_uri() . '/js/wow.min.js', array(), '20151215', true );
+    wp_enqueue_script( 'mv_edge-scripts', get_template_directory_uri() . '/js/mv-edge.js', array('jquery', 'responsive-nav' ), '20151215', true );
+    wp_enqueue_script( 'mv_edge-animations', get_template_directory_uri() . '/js/animations.js', array('jquery', 'mv_edge-scripts', 'svg-js', 'odometer' ), '20151215', true );
+    wp_enqueue_script( 'svg-js', get_template_directory_uri() . '/js/svg.js', array('jquery' ), '20151215', true );
+    wp_enqueue_script( 'odometer', get_template_directory_uri() . '/js/odometer.js', array('jquery' ), '20151215', true );
+    // replaced wow with custom trigger
+    //wp_enqueue_script( 'wow', get_template_directory_uri() . '/js/wow.min.js', array(), '20151215', true );
     wp_enqueue_script( 'responsive-nav', get_template_directory_uri() . '/js/responsive-nav.js', array(), '20151215', true );
     wp_enqueue_script( 'fastclick', get_template_directory_uri() . '/js/fastclick.js', array(), '20151215', true );
     wp_enqueue_script( 'scroll-js', get_template_directory_uri() . '/js/scroll.js', array(), '20151215', true );
+        wp_enqueue_script( 'twenmax', get_template_directory_uri() . '/js/TweenMax.js', array('jquery'), '20151215', true );
     //wp_enqueue_script( 'mv_edge-navigation', get_template_directory_uri() . '/js/fixed-responsive-nav.js', array('responsive-nav', 'fastclick', 'scroll-js'), '20151215', true );
 
 	wp_enqueue_script( 'mv_edge-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
