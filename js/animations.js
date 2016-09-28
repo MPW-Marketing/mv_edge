@@ -7,16 +7,37 @@ jQuery( document ).ready(function(){
 		jQuery(this).css('padding-left', paddingUse);
 	})
 	//jQuery('.home-section').each(function(){jQuery(this).scrollIntoView();});
-	jQuery('.industry-image').each(function(){jQuery(this).scrollIntoView();});
-	jQuery('.industry-info').each(function(){jQuery(this).scrollIntoView();});
-	jQuery('#about-stats-section').scrollIntoView();
-	jQuery('#economic-ops').scrollIntoView();
-	jQuery('.economic-indicators').scrollIntoView();
-	jQuery('.hexagon-boxes').scrollIntoView();
-	jQuery('.mv-stats-container').scrollIntoView();
-	jQuery('.wage-info').scrollIntoView();
-	jQuery('#business-assistance').scrollIntoView();
- 
+		if ( jQuery( ".industry-image" ).length ) 		{
+			jQuery('.industry-image').each(function(){
+				jQuery(this).scrollIntoView();
+			});
+		}
+		if ( jQuery( ".industry-info" ).length ) 		{
+			jQuery('.industry-info').each(function(){
+				jQuery(this).scrollIntoView();
+			});
+		}
+		if ( jQuery( "#about-stats-section" ).length ) 	{
+			jQuery('#about-stats-section').scrollIntoView();
+		}
+		if ( jQuery( "#economic-ops" ).length ) 		{
+			jQuery('#economic-ops').scrollIntoView();
+		}
+		if ( jQuery( ".economic-indicators" ).length ) 	{
+			jQuery('.economic-indicators').scrollIntoView();
+		}
+		if ( jQuery( ".hexagon-boxes" ).length ) 		{
+			jQuery('.hexagon-boxes').scrollIntoView();
+		}
+		if ( jQuery( ".mv-stats-container" ).length ) 	{
+			jQuery('.mv-stats-container').scrollIntoView();
+		}
+		if ( jQuery( ".wage-info" ).length ) 			{
+			jQuery('.wage-info').scrollIntoView();
+		}
+		if ( jQuery( "#business-assistance" ).length ) 	{
+			jQuery('#business-assistance').scrollIntoView()
+		}
 
 	jQuery('.industry-left').on('intoView', slideLeft);
 	jQuery('.industry-right').on('intoView', slideRight);
@@ -30,35 +51,35 @@ jQuery( document ).ready(function(){
 
 });
 function slideLeft (e) {
-	console.log('slideLeft');
+	//console.log('slideLeft');
 	//e.item.animateCss('slideInLeft');
 	TweenLite.to(e.item, 1, {left:"0", ease:Power2.easeInOut});
 }
 
 function slideRight (e) {
-	console.log('slideRight');
+	//console.log('slideRight');
 	//e.item.animateCss('slideInRight')
 	TweenLite.to(e.item, 1, {right:"0", ease:Power2.easeInOut});
 }
 function expandUp (e) {
-	console.log('expandUp');
+	//console.log('expandUp');
 	//e.item.children('.content-width').animateCss('slideInUp');
 	TweenLite.set(e.item, {height:"auto"});
     TweenLite.from(e.item, 2, {height:0});
     TweenLite.to(e.item, 2, {paddingTop:"4rem",paddingBottom:"4rem", onComplete:runCounter(e.item)});
 }
 function runCounter (e) {
-	console.log('eh ');
-	console.log(e);
+	//console.log('eh ');
+	//console.log(e);
 	var ods = e.find('.odometer');
 	ods.each(function(){
-		console.log(jQuery(this).attr('data-number-value'));
+		//console.log(jQuery(this).attr('data-number-value'));
 		jQuery(this).html(jQuery(this).attr('data-number-value'));
 	})
 }
 function runStatCounter (e) {
-	console.log('eh2 ');
-	console.log(e.item);
+	//console.log('eh2 ');
+	//console.log(e.item);
 	var eh = e.item;
 	var ods = eh.find('.odometer');
 	ods.each(function(){
@@ -68,7 +89,7 @@ function runStatCounter (e) {
 }
 
 function showEachIndi (e) {
-	console.log('showEachIndi');
+	//console.log('showEachIndi');
 	var draw = SVG('eco-indicators-canvas');
 	var canvas = jQuery("#eco-indicators-canvas");
 	var mvHeight = jQuery('#mv-stats td.row-title .cell-container').height();
@@ -92,7 +113,7 @@ function showEachIndi (e) {
     })*/
 }
 function showStats (e) {
-	console.log('showStats');
+	//console.log('showStats');
 	var statDiv = e.item;
 	var statRows = statDiv.find();
 	var tl = new TimelineLite();
@@ -131,7 +152,7 @@ tl.play();
 	//TweenLite.to(".stat-value", 5, {paddingLeft:"10px"});
 }
 function showWageStats (e) {
-	console.log('showWageStats');
+	//console.log('showWageStats');
 	var statDiv = e.item;
 
 	var tl = new TimelineLite();
@@ -173,7 +194,7 @@ tl.play();
 	//TweenLite.to(".stat-value", 5, {paddingLeft:"10px"});
 }
 function showEachHex (e) {
-	console.log('showEachHex');
+	//console.log('showEachHex');
 	var draw = SVG('hexagon-canvas');
 	var canvas = jQuery("#hexagon-canvas");
 	var centerHex = jQuery("#center-hex");
@@ -214,33 +235,33 @@ function showEachHex (e) {
 	var bottomLeftline = 	draw.line(centerHexX, centerHexY, centerHexX, centerHexY);
 	var topLeftline = 		draw.line(centerHexX, centerHexY, centerHexX, centerHexY);
 	//create a TimelineLite instance
-var tl = new TimelineLite();
-
-//append a to() tween
-tl.to([centerHex, topCenterline.node, topRightline.node, bottomRightline.node,bottomLeftline.node,topLeftline.node], 2, {opacity:"1"});
-//add another sequenced tween (by default, tweens are added to the end of the timeline which makes sequencing simple)
-tl.to(topCenterline.node, 2, {attr:{y2:topCenterHexY}, ease:Linear.easeNone});
-//offset the next tween by 0.75 seconds so there's a gap between the end of the previous tween and this new one
-tl.to(topCenterHex, 2, {opacity:1});
-
-//overlap the next tween with the previous one by 0.5 seconds (notice the negative offset at the end)
-tl.to(topRightline.node, 2, {attr:{y2:topRightHexY,x2:topRightHexX}, ease:Linear.easeNone}, "-=0.5");
-tl.to(topRightHex, 2, {opacity:1});
-//overlap the next tween with the previous one by 0.5 seconds (notice the negative offset at the end)
-tl.to(bottomRightline.node, 2, {attr:{y2:bottomRightHexY,x2:bottomRightHexX}, ease:Linear.easeNone}, "-=0.5");
-tl.to(bottomRightHex, 2, {opacity:1});
-//overlap the next tween with the previous one by 0.5 seconds (notice the negative offset at the end)
-tl.to(bottomLeftline.node, 2, {attr:{y2:bottomLeftHexY,x2:bottomLeftHexX}, ease:Linear.easeNone}, "-=0.5");
-tl.to(bottomLeftHex, 2, {opacity:1});
-//overlap the next tween with the previous one by 0.5 seconds (notice the negative offset at the end)
-tl.to(topLeftline.node, 2, {attr:{y2:topLeftHexY,x2:topLeftHexX}, ease:Linear.easeNone}, "-=0.5");
-tl.to(topLeftHex, 2, {opacity:1});
-
-
-
-//now we can control the entire sequence with the standard methods like these:
-
-tl.play();
+	var tl = new TimelineLite();
+	
+	//append a to() tween
+	tl.to([centerHex, topCenterline.node, topRightline.node, bottomRightline.node,bottomLeftline.node,topLeftline.node], 2, {opacity:"1"});
+	//add another sequenced tween (by default, tweens are added to the end of the timeline which makes sequencing simple)
+	tl.to(topCenterline.node, 2, {attr:{y2:topCenterHexY}, ease:Linear.easeNone});
+	//offset the next tween by 0.75 seconds so there's a gap between the end of the previous tween and this new one
+	tl.to(topCenterHex, 2, {opacity:1});
+	
+	//overlap the next tween with the previous one by 0.5 seconds (notice the negative offset at the end)
+	tl.to(topRightline.node, 2, {attr:{y2:topRightHexY,x2:topRightHexX}, ease:Linear.easeNone}, "-=0.5");
+	tl.to(topRightHex, 2, {opacity:1});
+	//overlap the next tween with the previous one by 0.5 seconds (notice the negative offset at the end)
+	tl.to(bottomRightline.node, 2, {attr:{y2:bottomRightHexY,x2:bottomRightHexX}, ease:Linear.easeNone}, "-=0.5");
+	tl.to(bottomRightHex, 2, {opacity:1});
+	//overlap the next tween with the previous one by 0.5 seconds (notice the negative offset at the end)
+	tl.to(bottomLeftline.node, 2, {attr:{y2:bottomLeftHexY,x2:bottomLeftHexX}, ease:Linear.easeNone}, "-=0.5");
+	tl.to(bottomLeftHex, 2, {opacity:1});
+	//overlap the next tween with the previous one by 0.5 seconds (notice the negative offset at the end)
+	tl.to(topLeftline.node, 2, {attr:{y2:topLeftHexY,x2:topLeftHexX}, ease:Linear.easeNone}, "-=0.5");
+	tl.to(topLeftHex, 2, {opacity:1});
+	
+	
+	
+	//now we can control the entire sequence with the standard methods like these:
+	
+	tl.play();
 
 		//line.animate({ ease: '<', delay: '3.5s' }).attr({ 'y2': topCenterHexY });
 /*

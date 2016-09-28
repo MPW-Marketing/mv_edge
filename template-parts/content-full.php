@@ -1,6 +1,6 @@
 <?php
 /**
- * Template part for displaying page content in page.php.
+ * Template part for displaying full width color bar bar page content in page.php.
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
@@ -16,7 +16,7 @@
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
 <?php } ?>
-	<div class="entry-content content-width">
+	<div class="entry-content">
 		<?php
 			the_content();
 
