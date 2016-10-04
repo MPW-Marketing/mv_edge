@@ -172,37 +172,5 @@ jQuery.fn.extend({
     
             }         });
     }
-
-});
-jQuery.fn.extend({
-    scrollIntoViewQuick: function (elementToWatch) {
-        var win = jQuery(window);
-        var fold = jQuery(this);
-        var inTheFold = false;
-
-
-        //set the item to visable when it is 15% of the way up the screen;
-
-        win.scroll(function () {
-        var winHeight = win.height();
-        var itemTop = fold.offset().top;
-        var itemEnter = itemTop - (winHeight * .95);
-    
-        
-            if (win.scrollTop() >= itemEnter )
-            {  
-                if (!inTheFold) {
-                  inTheFold = true;
-                  fold.addClass('in-view');
-                  fold.removeClass('out-of-view');
-                  fold.trigger({
-            type: "intoView",
-            item: fold,
-        });
-                }
-    
-            }         });
-    }
-    
 });
 

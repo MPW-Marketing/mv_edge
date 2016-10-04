@@ -8,6 +8,7 @@ function full_width_section ( $atts, $content=null ) {
 			'id' => '',
             'class' => '',
             'add_ons' => '',
+            'full_width_content' => '',
 		), $atts, 'full_width' );
 
     $cont = '<section id="';
@@ -27,7 +28,11 @@ function full_width_section ( $atts, $content=null ) {
     if ($atts['add_ons'] != '') {
         $cont .= ' ' . $atts['add_ons'];
     }
-    $cont .= '><div class="content-width">' . $content . '</div>';
+    $cont .= '>';
+    if ($atts['full_width_content'] != '') {
+        $cont .= $atts['full_width_content'];
+    }
+    $cont .= '<div class="content-width">' . $content . '</div>';
     $cont .= '</section>';
     
     return do_shortcode($cont);

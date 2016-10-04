@@ -767,7 +767,7 @@ a:active {
 
 @media screen and (min-width: 37.5em) {
   .nav-collapse a {
-    padding: 3rem 1.09372rem 3.2rem;
+    padding: 2.5rem 1.09372rem 2.5rem;
     text-align: center;
     border-top: 0;
     float: left;
@@ -1110,14 +1110,18 @@ object {
 .content-width {
     max-width: 1285px;
     margin: 0 auto;
-    padding: 0 .40622em;
+    padding: 0 5rem;
 }
+
 .has-sidebar.content-area {
 	float: left;
 	margin: 0 -25% 0 0;
 	width: 100%;
 	/*moving sidebar into content*/
 	margin-right: 0;
+}
+.site-main {
+    max-width: 100%;
 }
 .has-sidebar .site-main {
 	margin: 0 25% 0 0;
@@ -1137,14 +1141,14 @@ object {
 }
 .site-branding {
     float: left;
-    width: 240px;
-    margin: 28px 16px 23px 10px; 
+    width: 185px;
+    margin: 20px 16px 23px 10px;
 }
 .nav-container {
     float: right;
 }
 .site-header {
-    height: 124px;
+    height: 104px;
     border-bottom: 6px solid #78a22f;
     background-color: #152029;
     position: fixed;
@@ -1165,7 +1169,7 @@ object {
 .header-widget {
     display: inline-block;
     float: left;
-    margin: 45px 10px 45px;
+    margin: 35px 10px 35px;
 }
 .social-icon, .social-icon:visited {
     color: #fffefe;
@@ -1210,6 +1214,7 @@ object {
     font-weight: 700;
     font-size: 90px;
     font-size: 5.625rem;
+    text-align:right;
 }
 .curly-brace {
     font-size: 145px;
@@ -1227,7 +1232,7 @@ object {
     font-size: 45px;
     font-size: 2.8125rem;
     text-align: center;
-    font-weight: 700;
+    font-weight: 400;
 }
 .home-section h3 {
 	font-size: 32px;
@@ -1250,6 +1255,17 @@ object {
     padding-top: 4rem;
     padding-bottom: 4rem;
 }
+
+img.wp-image-26{
+    margin-top:-95px;
+    width:85%;
+}
+#contact {
+    padding-top: 0;
+}
+#contact .content-width {
+    margin-top: -60px;
+}
 .home-heading-right {
     margin: 1.11905em 0;
 }
@@ -1257,8 +1273,8 @@ object {
     text-align: center;
 }
 .text-content {
-    line-height: 1.2em;
-    margin-top: .6em;
+    line-height: 1em;
+    margin-top: .8em;
 }
 .pure-u-sm-1-2 {
     padding-left: .5em;
@@ -1295,9 +1311,18 @@ object {
 }
 .edge-about {
     width: 369px;
-    margin: 0 auto;
+    margin: auto;
     font-size: 1.5rem;
     font-weight: 400;
+    padding-left:70px;
+}
+
+img.wp-image-27{
+    padding-left:30px;
+    padding-right:30px;
+}
+.about-stats .stat-info {
+    min-height: 130px;
 }
 #services {
     max-width: 900px;
@@ -1309,9 +1334,11 @@ object {
     font-size: 1.5rem;
     text-transform: uppercase;
     font-weight: 700;
+    line-height:3rem;
 }
 .service-links {
     font-size: 1.5rem;
+    line-height:3rem;
 }
 .service-links a {
 	color: #78a22f;
@@ -1330,41 +1357,53 @@ object {
     color: #eda918;
     font-weight: 700;
     font-size: 154px;
-    font-size: 9.678rem;
+    font-size: 8rem;
     line-height: 1;
+    margin-top: 65px;
 }
 
 .stat-info h3 {
     line-height: 1;
-    font-size: 2.812rem;
+    font-size: 1.75rem;
     font-weight: 700;
-    margin: 2rem 0 1.5rem;
+    margin: 0.5rem 0.75rem 1.5rem;
 }
 .stat-info p {
     line-height: 1;
     font-size: 34px;
-    font-size: 2.124rem;
+    font-size: 1.5rem;
     font-weight: 400;
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+    max-width:235px;
+    margin-top:-10px;
+    padding:5px 15px;
+        margin-bottom: 15px;
+}
+.stat-button {
+    margin-bottom: 65px;
 }
 .stat-button .button {
     margin-top: 1rem;
     text-transform: uppercase;
     font-size: 34px;
-    font-size: 2.124rem;
+    font-size: 1.5rem;
     font-weight: 400;
 }
 .button {
     border-color: #78a22f;
     border-radius: 50px;
     border-style: solid;
-    border-width: 5px;
-    padding: 12px 58px 12px 30px;
+    border-width: 3.5px;
+    padding: 6px 39px 3px 15px;
     color: #fff;
     text-decoration: none;
     display: inline-block;
     background: url(images/Arrow.png);
     background-repeat: no-repeat;
-    background-position: 90%;
+    background-position: 91%;
+    background-size:9px auto;
     text-transform: uppercase;
     font-size: 25px;
     font-size: 1.5rem;
@@ -1403,6 +1442,11 @@ object {
     background: url(images/Green.png);
 }
 
+#economic-ops{
+    margin-top:-60px;
+    padding-bottom:1rem !important;
+}
+
 .economic-op-stat-box {
     border-radius: 15px;
     border-width: 10px;
@@ -1410,15 +1454,17 @@ object {
 }
 .economic-op-stat-box {
     border-radius: 15px;
-    border-width: 10px;
+    border-width: 7px;
     border-style: solid;
-    margin: 1rem;
+    margin: 0.25rem;
     text-align: center;
-    padding: 1.75rem .5rem;
+    padding: 0.75rem .5rem;
 }
+
 .economic-op-stat-box .stat-number {
     font-size: 100px;
-    font-size: 6.244rem;
+    font-size: 4.75rem;
+    margin-top: 0;
 }
 .economic-op-stat-box .stat-info p {
 	color: #fff;
@@ -1444,7 +1490,7 @@ object {
 .refugees .stat-number {
     color: #895ea8;
     font-size: 92px;
-    font-size: 5.7rem;
+    font-size: 4.75rem;
 }
 .stem {
     border-color: #50d893;
@@ -1464,7 +1510,7 @@ object {
 }
 .economic-indicators {
 	font-size: 30px;
-    font-size: 1.874rem;
+    font-size: 1.4rem;
 	font-weight: 700;
 	text-transform: uppercase;
 }
@@ -1476,16 +1522,30 @@ object {
 }
 .economic-indicators td.row-title {
     text-align: left;
+    width: 150px;
 }
 .economic-indicators td {
     font-size: 24px;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+}
+#eco-indicators-canvas, #mv-stats-canvas, #mv-wages-canvas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+#eco-indicators-canvas line {
+    stroke: #fff;
+    stroke-linecap: round;
+    stroke-dasharray: 0, 10;
+    stroke-width: 6px;
+    opacity: 0;
 }
 .cell-container {
-    width: 137px;
-    border: 5px solid;
+    width: 127px;
+    border: 4px solid;
     border-radius: 10px;
-    padding: 10px;
+    padding: 7px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
@@ -1547,33 +1607,56 @@ object {
 .mv-general-stats-div, .wages-table {
     display: table;
     width: 100%;
+    position: relative;
 }
 .stat-row {
     clear: both;
     width: 100%;
     display: table-row;
-    background: url(/wp-content/uploads/2016/09/single-dot.png) no-repeat;
+   /* background: url(/wp-content/uploads/2016/09/single-dot.png) no-repeat;
     background-repeat: repeat-x;
     background-position: 0 29px;
+    */
 }
 .mv-general-stats-div .stat-value{
-    padding-left: 74%;
+    padding-left: 10px;
+}
+#mv-stats-canvas line {
+    stroke: #fff;
+    stroke-linecap: round;
+	stroke-dasharray: 0, 17;
+    stroke-width: 7px; 
+    opacity: 0;
+}
+#mv-wages-canvas line {
+	stroke: #fff;
+    stroke-linecap: round;
+	stroke-dasharray: 0, 17;
+    stroke-width: 7px; 
+    opacity: 0;
 }
 .mv-general-stats-div .cell-info {
-    opacity: 0;
+    opacity: 1;
 }
 .wages-table  .cell-info {
-    opacity: 0;
+    opacity: 1;
 }
 .wages-table .stat-value{
-    padding-left: 50%;
+    padding-left: 10px;
 }
 /* 
 .mv-general-stats-div .stat-row {
     opacity: 0;
 }*/
 .mv-general-stats-div .stat-name, .wages-table .stat-name {
-        padding-right: 10px;
+        padding-right: 13px;
+}
+
+#stat-young-age .stat-name.stat-cell {
+    padding-right: 14px;
+}
+#stat-wage .stat-name.stat-cell {
+padding-right: 13.5px;
 }
 .stat-cell {
  display: table-cell;
@@ -1609,9 +1692,9 @@ object {
 .business-stat-number {
     color: #042e50;
     font-size: 102px;
-    font-size: 6.4rem;
+    font-size: 7rem;
     font-weight: 700;
-    padding: 2rem 1rem;
+    padding: 1rem 1rem 0rem;
     background: #fff;
     margin: 0 .25rem;
     border-radius: 15px;
@@ -1638,6 +1721,7 @@ object {
     font-size: 1.85rem;
     line-height: 1;
     text-transform: uppercase;
+    padding:0px 40px;
 }
 .business-assistance-buttons {
     max-width: 750px;
@@ -1663,6 +1747,10 @@ object {
 #industry h2 {
     font-weight: 400;
 }
+.industries {
+    overflow: hidden;
+}
+
 .industries .industry-image {
     display: flex;
     flex-direction: column;
@@ -1731,7 +1819,7 @@ object {
 
 .industry-info {
     margin-bottom: 1rem;
-    padding-left: .5rem;
+    padding-left: 2.5rem;
     padding-right: 5rem;
 }
 
@@ -1741,10 +1829,10 @@ object {
     font-size: 57px;
     font-size: 3.5625rem;
     margin-top: 3rem;
-    margin-bottom: 2rem;
+    margin-bottom: -0.75rem;
 }
 .industry-button {
-    margin-top: 3rem;
+    margin-top: 2rem;
 }
 .industries .button {
     background-color: #152029;
@@ -1772,16 +1860,16 @@ object {
 }
 .contact-info {
     max-width: 1000px;
-    margin: 0 auto;
+    margin: 80px auto 0;
     text-align: center;
 }
 .contact-icon {
     border-radius: 50%;
-    border-width: 5px;
+    border-width: 4px;
     border-color: #ffffff;
     border-style: solid;
-    width: 99px;
-    height: 99px;
+    width: 89px;
+    height: 89px;
     margin: 0 auto;
     font-size: 37px;
     display: flex;
@@ -1799,7 +1887,7 @@ object {
 .contact-data {
     font-size: 25px;
     font-size: 1.55rem;
-    margin-top: 3rem;
+    margin-top: 1rem;
     height: 58px;
     line-height: 58px;
 }
@@ -1809,14 +1897,16 @@ object {
 
 .industry-right {
     position: relative;
-    right: -999em;
+    /*right: -75em;*/
+    right: 0;
 }
 /*.industry-right.in-view {
     right: 0;
 }*/
 .industry-left {
     position: relative;
-    left: -999em;
+    /*left: -75em;*/
+    left: 0;
 }
 /*.industry-left.in-view {
     left: 0;
@@ -1831,25 +1921,41 @@ object {
     padding: 0;
     height:0;
     overflow: hidden;
+    padding-top: 4rem;
 }
 .economic-indicators .cell-container {
-    opacity: 0;
+    opacity: 1;
+}
+
+#hexagons{
+    padding-top:60px;
 }
 .hexagon-boxes {
     position: relative;
     height: 1000px;
+    height: 800px;
+        max-width: 800px;
+    margin: 0 auto;
 }
 .hexagon-box {
     position: absolute;
-    opacity: 0;
+   opacity: 1;
     height: 351px;
     width: 351px;
+    height: 250px;
+    width: 250px;
     background-repeat: no-repeat;
     background-size: contain;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+
+.hex-inner img {
+    max-width: 140px;
+}
+
 
 #center-hex {
     background-image: url('/wp-content/uploads/2016/09/White.png'); 
@@ -1894,22 +2000,10 @@ object {
 #hexagon-canvas line {
     stroke: #fff;
     stroke-linecap: round;
-    stroke-dasharray: 1, 15;
-    stroke-width: 10; 
+	stroke-dasharray: 0, 17;
+    stroke-width: 7px; 
     opacity: 0;
 }
-#eco-indicators-canvas, #mv-stats-canvas, #mv-wages-canvas {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: block;
-}
-#eco-indicators-canvas line {
-    stroke: #fff;
-    stroke-linecap: round;
-    stroke-dasharray: 1, 15;
-    stroke-width: 10; 
-    opacity: 1;
-}
+
 
 
